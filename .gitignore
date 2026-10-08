@@ -1,0 +1,7 @@
+# Local WordPress/Playground runtime artifacts
+/wordpress/wp-content/database/
+/wordpress/wp-content/debug.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,20 @@
+.ca-admin-field { margin: 0 0 18px; }
+.ca-admin-field label { display: block; margin-bottom: 6px; }
+.ca-admin-field input[type="text"], .ca-admin-field input[type="number"], .ca-admin-field textarea { box-sizing: border-box; width: 100%; max-width: 100%; }
+.ca-admin-field textarea { min-height: 86px; }
+.ca-admin-grid { display: grid; gap: 8px 18px; }
+.ca-admin-grid-facts { grid-template-columns: repeat(4, minmax(120px, 1fr)); }
+.ca-admin-grid-wide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ca-recipe-admin-intro { padding: 2px 12px; border-left: 3px solid #c66b4e; background: #faf7f0; }
+.ca-admin-checkboxes { display: flex; flex-wrap: wrap; gap: 12px 24px; padding-top: 12px; }
+.ca-publish-checklist { margin: 0; padding-left: 20px; }
+.ca-publish-checklist li { margin: 0 0 8px; }
+.ca-author-image-preview img { width: 96px; height: 96px; object-fit: cover; border-radius: 50%; }
+.ca-import-wrap { max-width: 900px; }
+.ca-import-panel { background: #fff; border: 1px solid #dcdcde; border-radius: 8px; padding: 24px; margin: 20px 0; }
+.ca-import-panel h2 { margin-top: 0; }
+.ca-import-progress { height: 12px; overflow: hidden; background: #e8e8e8; border-radius: 99px; margin: 12px 0; }
+.ca-import-progress span { display: block; height: 100%; background: #34745f; }
+.ca-import-columns { columns: 2; }
+@media (max-width: 900px) { .ca-admin-grid-facts { grid-template-columns: repeat(2, minmax(100px, 1fr)); } }
+@media (max-width: 600px) { .ca-admin-grid-wide { grid-template-columns: 1fr; } .ca-import-columns { columns: 1; } }

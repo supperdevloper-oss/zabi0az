@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "palette": [
+        { "slug": "ink", "name": "Ink", "color": "#24312c" },
+        { "slug": "forest", "name": "Forest", "color": "#173b32" },
+        { "slug": "olive", "name": "Olive", "color": "#64735b" },
+        { "slug": "paprika", "name": "Paprika", "color": "#9b4935" },
+        { "slug": "butter", "name": "Butter", "color": "#edd18c" },
+        { "slug": "cream", "name": "Cream", "color": "#f7f3eb" },
+        { "slug": "white", "name": "White", "color": "#fffefa" }
+      ],
+      "defaultPalette": false,
+      "defaultGradients": false
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+          "slug": "sans",
+          "name": "Crisp & Air Sans"
+        },
+        {
+          "fontFamily": "'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif",
+          "slug": "editorial",
+          "name": "Crisp & Air Editorial"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small", "size": "0.875rem", "name": "Small" },
+        { "slug": "medium", "size": "1rem", "name": "Medium" },
+        { "slug": "large", "size": "1.25rem", "name": "Large" },
+        { "slug": "x-large", "size": "2rem", "name": "Extra large" }
+      ]
+    },
+    "spacing": {
+      "units": [ "px", "rem", "%", "vw" ],
+      "spacingSizes": [
+        { "slug": "20", "size": "0.5rem", "name": "XS" },
+        { "slug": "30", "size": "0.875rem", "name": "S" },
+        { "slug": "40", "size": "1.25rem", "name": "M" },
+        { "slug": "50", "size": "2rem", "name": "L" },
+        { "slug": "60", "size": "3rem", "name": "XL" }
+      ]
+    },
+    "blocks": {
+      "core/button": { "border": { "radius": true } },
+      "core/image": { "lightbox": { "allowEditing": true, "enabled": true } }
+    }
+  },
+  "styles": {
+    "color": { "background": "#fffefa", "text": "#24312c" },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--sans)",
+      "fontSize": "16px",
+      "lineHeight": "1.7"
+    },
+    "elements": {
+      "heading": { "typography": { "fontFamily": "var(--wp--preset--font-family--editorial)", "fontWeight": "500", "lineHeight": "1.1" } },
+      "link": { "color": { "text": "#325d4d" }, "typography": { "textDecoration": "underline" } },
+      "button": { "color": { "background": "#173b32", "text": "#fffefa" }, "border": { "radius": "99px" }, "typography": { "fontWeight": "650" } }
+    },
+    "blocks": {
+      "core/quote": { "border": { "left": { "color": "#9b4935", "width": "3px" } }, "spacing": { "padding": { "left": "1.5rem" } } }
+    }
+  }
+}
