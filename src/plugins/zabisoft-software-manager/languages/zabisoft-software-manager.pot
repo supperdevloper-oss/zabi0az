@@ -1,0 +1,625 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZabiSoft Software Manager 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 13:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: tools/make-pot.py\n"
+"X-Domain: zabisoft-software-manager\n"
+
+#: includes/class-zsm-admin-columns.php:120
+msgid "%d link with a problem"
+msgid_plural "%d links with a problem"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-zsm-meta-boxes.php:175
+msgid "+ Add mirror"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:278
+msgid "3D & Graphic Design"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:540
+msgid "About"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:113
+msgid "Add new category"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:51
+msgctxt "Add new on admin bar"
+msgid "Software entry"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:53
+msgid "Add new software"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:308
+msgid "Add screenshots"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:50
+msgctxt "Admin menu"
+msgid "Software"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:108
+msgid "All categories"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:125
+msgid "all links checked"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:160
+msgid "All platforms"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:61
+msgid "All software"
+msgstr ""
+
+#: includes/class-zsm-settings.php:101
+msgid "Archive URL slug"
+msgstr ""
+
+#: includes/class-zsm-settings.php:98
+msgid "Catalogue"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:115
+msgid "Categories"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:174
+msgid "Check every download link now"
+msgstr ""
+
+#: includes/class-zsm-settings.php:127
+msgid "Check every mirror URL when an entry is saved"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:258
+msgid "Check link"
+msgstr ""
+
+#: zabisoft-software-manager.php:143
+msgid "Checking…"
+msgstr ""
+
+#: zabisoft-software-manager.php:147
+msgid "Choose screenshots"
+msgstr ""
+
+#: includes/class-zsm-fields.php:53
+#: includes/class-zsm-shortcodes.php:262
+msgid "Compatibility"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:545
+#: includes/class-zsm-demo-content.php:658
+msgid "Contact us"
+msgstr ""
+
+#: includes/class-zsm-fields.php:141
+msgid "Countdown before the download button appears (seconds)"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:42
+msgid "Cover"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:63
+msgid "Cover image"
+msgstr ""
+
+#: includes/class-zsm-settings.php:147
+msgid "Data"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:280
+msgid "Data Recovery"
+msgstr ""
+
+#: includes/class-zsm-settings.php:118
+msgid "Default countdown (seconds)"
+msgstr ""
+
+#: includes/class-zsm-settings.php:168
+msgid "Delete all demo content created by this plugin?"
+msgstr ""
+
+#: includes/class-zsm-settings.php:152
+msgid "Delete all software entries, terms and settings when the plugin is deleted"
+msgstr ""
+
+#: includes/class-zsm-settings.php:162
+msgid "Demo content"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:266
+msgid "Developer"
+msgstr ""
+
+#: includes/class-zsm-fields.php:68
+msgid "Developer / publisher"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:555
+msgid "Disclaimer"
+msgstr ""
+
+#: includes/class-zsm-settings.php:139
+msgid "Disclosure text under the download box"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:560
+msgid "DMCA"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:474
+msgid "Documentation"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:166
+#: includes/class-zsm-shortcodes.php:199
+msgid "Download"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:276
+msgid "Download Managers"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:40
+msgid "Download mirrors"
+msgstr ""
+
+#: includes/class-zsm-fields.php:133
+msgid "Download the installer from the official website\nRight click the file and choose “Run as administrator”\nFollow the setup wizard\nRestart the computer"
+msgstr ""
+
+#: includes/class-zsm-settings.php:115
+msgid "Downloads & link checking"
+msgstr ""
+
+#: includes/class-zsm-fields.php:95
+msgid "Dual core 2 GHz or faster"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:111
+msgid "Edit category"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:54
+msgid "Edit software"
+msgstr ""
+
+#: includes/class-zsm-settings.php:108
+msgid "Entries per archive page"
+msgstr ""
+
+#: includes/class-zsm-fields.php:120
+msgid "Features & installation"
+msgstr ""
+
+#: includes/class-zsm-fields.php:38
+#: includes/class-zsm-shortcodes.php:259
+msgid "File size"
+msgstr ""
+
+#: includes/class-zsm-fields.php:60
+msgid "Free / open source, trial, commercial…"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:694
+msgid "Getintopc com"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:311
+msgid "Graphics"
+msgstr ""
+
+#: includes/class-zsm-fields.php:108
+msgid "Graphics card"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:310
+msgid "Hard disk"
+msgstr ""
+
+#: includes/class-zsm-fields.php:103
+msgid "Hard disk space"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:640
+msgid "Home"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:44
+msgid "How to use this page"
+msgstr ""
+
+#: includes/class-zsm-settings.php:167
+msgid "Import demo content"
+msgstr ""
+
+#: includes/class-zsm-fields.php:130
+msgid "Installation instructions"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:268
+msgid "Installer / portable / ISO"
+msgstr ""
+
+#: includes/class-zsm-fields.php:77
+msgid "Interface languages"
+msgstr ""
+
+#: includes/class-zsm-fields.php:124
+msgid "Key features"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:251
+msgid "Label"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:264
+msgid "Languages"
+msgstr ""
+
+#: includes/class-zsm-fields.php:64
+#: includes/class-zsm-shortcodes.php:265
+msgid "Last update"
+msgstr ""
+
+#: includes/class-zsm-fields.php:58
+#: includes/class-zsm-shortcodes.php:263
+msgid "Licence"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:47
+msgid "Link check"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:221
+msgid "link checked"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:222
+msgid "link needs attention"
+msgstr ""
+
+#: includes/class-zsm-fields.php:98
+#: includes/class-zsm-shortcodes.php:309
+msgid "Memory (RAM)"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:240
+msgid "Mirror %s"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:46
+msgid "Mirrors"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:277
+msgid "Multimedia & Video"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:114
+msgid "New category name"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:55
+msgid "New software"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:90
+msgid "none"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:275
+msgid "Note for visitors"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:275
+msgid "Office Tools"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:252
+msgid "Official download"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:467
+msgid "Official release"
+msgstr ""
+
+#: includes/class-zsm-fields.php:73
+#: includes/class-zsm-meta-boxes.php:161
+msgid "Official website"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:464
+msgid "Official website (recommended)"
+msgstr ""
+
+#: includes/class-zsm-fields.php:50
+msgid "Offline installer / full standalone setup"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:369
+msgid "OK"
+msgstr ""
+
+#: includes/class-zsm-settings.php:134
+msgid "Open download links in a new tab"
+msgstr ""
+
+#: includes/class-zsm-fields.php:88
+#: includes/class-zsm-shortcodes.php:307
+msgid "Operating system"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:274
+msgid "Operating Systems"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:276
+msgid "Optional: licence key page, checksum, instructions…"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:312
+msgid "Other"
+msgstr ""
+
+#: includes/class-zsm-fields.php:113
+msgid "Other requirements"
+msgstr ""
+
+#: includes/class-zsm-fields.php:138
+msgid "Page options"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:109
+msgid "Parent category"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:110
+msgid "Parent category:"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:271
+msgid "Platform"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:137
+msgid "Platforms"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:48
+msgctxt "Post type general name"
+msgid "Software"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:49
+msgctxt "Post type singular name"
+msgid "Software entry"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:550
+msgid "Privacy policy"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:369
+msgid "Problem"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:230
+#: zabisoft-software-manager.php:145
+msgid "Problem detected"
+msgstr ""
+
+#: includes/class-zsm-fields.php:93
+#: includes/class-zsm-shortcodes.php:308
+msgid "Processor"
+msgstr ""
+
+#: includes/class-zsm-fields.php:28
+msgid "Program details"
+msgstr ""
+
+#: includes/class-zsm-settings.php:128
+msgid "Re-check all links every 12 hours automatically (WP-Cron)"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:229
+#: zabisoft-software-manager.php:144
+msgid "Reachable"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:472
+msgid "Release notes"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:246
+msgid "Remove"
+msgstr ""
+
+#: includes/class-zsm-settings.php:168
+msgid "Remove demo content"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:300
+msgid "Remove image"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:65
+msgid "Remove the cover image"
+msgstr ""
+
+#: zabisoft-software-manager.php:146
+msgid "Remove this mirror?"
+msgstr ""
+
+#: includes/class-zsm-fields.php:127
+msgid "Runs completely offline\nSupports 40+ languages\nExports to PDF and DOCX"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:356
+msgid "Screenshot"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:41
+msgid "Screenshots"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:107
+msgid "Search categories"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:58
+msgid "Search software"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:279
+msgid "Security & Antivirus"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:64
+msgid "Set the cover image"
+msgstr ""
+
+#: includes/class-zsm-settings.php:34
+msgid "Settings"
+msgstr ""
+
+#: includes/class-zsm-fields.php:43
+#: includes/class-zsm-shortcodes.php:260
+msgid "Setup file name"
+msgstr ""
+
+#: includes/class-zsm-fields.php:48
+#: includes/class-zsm-shortcodes.php:261
+msgid "Setup type"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:565
+msgid "Sitemap"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:44
+#: includes/class-zsm-meta-boxes.php:263
+msgid "Size"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:62
+msgid "Software archive"
+msgstr ""
+
+#: includes/class-zsm-settings.php:33
+#: includes/class-zsm-settings.php:93
+msgid "Software settings"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:52
+msgctxt "software"
+msgid "Add new"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:45
+msgid "System"
+msgstr ""
+
+#: includes/class-zsm-fields.php:84
+msgid "System requirements"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:155
+msgid "Tags"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:135
+msgctxt "taxonomy general name"
+msgid "Platforms"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:105
+msgctxt "taxonomy general name"
+msgid "Software categories"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:153
+msgctxt "taxonomy general name"
+msgid "Software tags"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:136
+msgctxt "taxonomy singular name"
+msgid "Platform"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:106
+msgctxt "taxonomy singular name"
+msgid "Software category"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:154
+msgctxt "taxonomy singular name"
+msgid "Software tag"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:267
+msgid "Type"
+msgstr ""
+
+#: includes/class-zsm-settings.php:150
+msgid "Uninstall"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:112
+msgid "Update category"
+msgstr ""
+
+#: includes/class-zsm-meta-boxes.php:255
+msgid "URL (https://…)"
+msgstr ""
+
+#: zabisoft-software-manager.php:148
+msgid "Use these images"
+msgstr ""
+
+#: includes/class-zsm-demo-content.php:281
+msgid "Utilities"
+msgstr ""
+
+#: includes/class-zsm-settings.php:125
+msgid "Verification"
+msgstr ""
+
+#: includes/class-zsm-admin-columns.php:43
+#: includes/class-zsm-fields.php:32
+#: includes/class-zsm-shortcodes.php:258
+msgid "Version"
+msgstr ""
+
+#: includes/class-zsm-shortcodes.php:137
+msgid "Version %s"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:56
+msgid "View software page"
+msgstr ""
+
+#: includes/class-zsm-post-types.php:57
+msgid "View software pages"
+msgstr ""
+
+#: includes/class-zsm-settings.php:132
+msgid "Visitor experience"
+msgstr ""

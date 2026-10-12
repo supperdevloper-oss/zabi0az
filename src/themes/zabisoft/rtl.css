@@ -1,0 +1,180 @@
+/*
+ * ZabiSoft RTL overrides.
+ *
+ * Loaded automatically by WordPress for right-to-left locales (Arabic, Hebrew,
+ * Persian…). Only the properties that are direction sensitive are mirrored.
+ */
+
+body {
+	direction: rtl;
+	text-align: right;
+}
+
+ul,
+ol {
+	padding-left: 0;
+	padding-right: 1.35em;
+}
+
+blockquote {
+	border-left: 0;
+	border-right: 5px solid var(--zs-accent);
+}
+
+.alignleft {
+	float: right;
+	margin: 0.4em 0 1em 1.2em;
+}
+
+.alignright {
+	float: left;
+	margin: 0.4em 1.2em 1em 0;
+}
+
+.zs-nav__list > li {
+	border-right: 0;
+	border-left: 1px solid #bdbdbd;
+	box-shadow: inset -1px 0 0 #fff;
+}
+
+.zs-nav__list ul {
+	left: auto;
+	right: 0;
+}
+
+.zs-nav__list ul ul {
+	left: auto;
+	right: 100%;
+}
+
+.zs-nav__list > li.menu-item-has-children > a::after {
+	margin-left: 0;
+	margin-right: 9px;
+}
+
+.zs-topbar__menu a,
+.zs-meta,
+.zs-entry__meta,
+.zs-cat-strip a,
+.zs-pagination,
+.zs-breadcrumbs {
+	direction: rtl;
+}
+
+.zs-post__thumb img {
+	margin-right: 0;
+}
+
+.zs-post__title {
+	padding-right: 0;
+}
+
+.zs-comment-bubble {
+	right: auto;
+	left: 0;
+	border-radius: 999px 999px 6px 999px;
+}
+
+.zs-breadcrumbs a {
+	display: inline-block;
+}
+
+.zs-author-box img {
+	margin-right: 0;
+}
+
+.zs-comment__body {
+	padding: 14px 84px 14px 16px;
+	border-radius: 10px 0 10px 10px;
+}
+
+.zs-comment__avatar {
+	left: auto;
+	right: 12px;
+}
+
+.zs-comment-list .children {
+	margin-left: 0;
+	margin-right: 44px;
+}
+
+.zs-install-steps li {
+	padding: 10px 46px 10px 0;
+}
+
+.zs-install-steps li::before {
+	left: auto;
+	right: 0;
+}
+
+.zs-features li {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.zs-features li::before {
+	left: auto;
+	right: 0;
+}
+
+.zs-features li::after {
+	left: auto;
+	right: 4px;
+}
+
+.zs-toc ol {
+	padding-left: 0;
+	padding-right: 1.2em;
+}
+
+.zs-specs th,
+th,
+td {
+	text-align: right;
+}
+
+.zs-go-top {
+	right: auto;
+	left: 16px;
+}
+
+.zs-search-form input[type="search"] {
+	direction: rtl;
+}
+
+.zs-post-nav .next {
+	text-align: left;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.zs-mirror__action .zs-btn--download::before {
+	margin-right: 0;
+	margin-left: 8px;
+}
+
+.zs-lightbox__close {
+	right: auto;
+	left: 18px;
+}
+
+.zs-hp {
+	left: -9999px;
+	right: auto;
+}
+
+@media (max-width: 860px) {
+	.zs-nav__list ul {
+		text-align: right;
+	}
+}
+
+@media (max-width: 640px) {
+	.zs-comment__body {
+		padding: 56px 16px 16px;
+	}
+
+	.zs-comment-list .children {
+		margin-right: 16px;
+	}
+}

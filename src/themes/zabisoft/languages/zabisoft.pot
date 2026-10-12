@@ -1,0 +1,986 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZabiSoft 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 13:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: tools/make-pot.py\n"
+"X-Domain: zabisoft\n"
+
+#: inc/comments.php:45
+msgid "%s ago"
+msgstr ""
+
+#: comments.php:20
+#: inc/template-tags.php:94
+#: single-software.php:58
+#: single.php:41
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/template-tags.php:307
+msgid "%s min read"
+msgid_plural "%s min read"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/software/buttons.php:32
+msgid "%s mirror"
+msgid_plural "%s mirrors"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/contact-form.php:74
+msgid "[%1$s] Contact form: %2$s"
+msgstr ""
+
+#: template-parts/author-box.php:20
+msgid "About %s"
+msgstr ""
+
+#: inc/customizer.php:203
+msgid "Accent colour scheme"
+msgstr ""
+
+#: inc/software-fallback.php:32
+msgid "Add new software"
+msgstr ""
+
+#: inc/software.php:180
+msgid "Added on"
+msgstr ""
+
+#: template-parts/author-box.php:41
+msgid "All posts by this author"
+msgstr ""
+
+#: archive-software.php:17
+#: front-page.php:147
+msgid "All software"
+msgstr ""
+
+#: page-templates/template-about.php:56
+msgid "Articles"
+msgstr ""
+
+#: template-parts/author-box.php:34
+msgid "author archive"
+msgstr ""
+
+#: template-parts/software/downloads.php:133
+msgid "Before you download"
+msgstr ""
+
+#: inc/widgets.php:251
+#: page-templates/template-sitemap.php:41
+msgid "Blog categories"
+msgstr ""
+
+#: inc/widgets.php:140
+msgid "Blog posts only"
+msgstr ""
+
+#: inc/customizer.php:208
+msgid "Blue"
+msgstr ""
+
+#: inc/template-tags.php:248
+msgid "Breadcrumb"
+msgstr ""
+
+#: front-page.php:77
+msgid "Browse by category"
+msgstr ""
+
+#: header.php:103
+msgid "Browse categories"
+msgstr ""
+
+#: inc/widgets.php:190
+#: inc/widgets.php:239
+#: page-templates/template-about.php:60
+msgid "Categories"
+msgstr ""
+
+#: inc/seo.php:97
+msgid "Category: "
+msgstr ""
+
+#: inc/customizer.php:257
+msgid "Check download URLs before printing them"
+msgstr ""
+
+#: comments.php:62
+msgid "Comment"
+msgstr ""
+
+#: template-parts/content-post.php:16
+#: template-parts/content-software.php:19
+msgid "comments"
+msgstr ""
+
+#: page-templates/template-sitemap.php:131
+msgid "Comments feed"
+msgstr ""
+
+#: inc/software.php:27
+msgid "Compatibility"
+msgstr ""
+
+#: inc/customizer.php:171
+msgid "Container width (px)"
+msgstr ""
+
+#: inc/widgets.php:136
+msgid "Content type:"
+msgstr ""
+
+#: page-templates/template-about.php:39
+msgid "Copyright"
+msgstr ""
+
+#: page-templates/template-contact.php:57
+msgid "Copyright / takedown requests"
+msgstr ""
+
+#: inc/customizer.php:261
+msgid "Copyright text"
+msgstr ""
+
+#: inc/customizer.php:250
+msgid "Countdown length (seconds)"
+msgstr ""
+
+#: inc/software.php:30
+msgid "Developer"
+msgstr ""
+
+#: inc/customizer.php:49
+#: inc/software.php:115
+#: template-parts/software/downloads.php:30
+#: template-parts/software/downloads.php:34
+#: template-parts/software/toc.php:71
+msgid "Download"
+msgstr ""
+
+#: inc/customizer.php:251
+msgid "Download button label"
+msgstr ""
+
+#: inc/editor.php:41
+msgid "Download call to action"
+msgstr ""
+
+#: inc/customizer.php:35
+msgid "Download Free Your Desired Software"
+msgstr ""
+
+#: inc/editor.php:42
+#: template-parts/software/buttons.php:17
+msgid "Download now"
+msgstr ""
+
+#: inc/comments.php:72
+msgid "Edit"
+msgstr ""
+
+#: inc/software-fallback.php:33
+msgid "Edit software"
+msgstr ""
+
+#: inc/comments.php:93
+#: inc/contact-form.php:63
+#: page-templates/template-contact.php:46
+msgid "Email"
+msgstr ""
+
+#: inc/widgets.php:138
+msgid "Everything"
+msgstr ""
+
+#: inc/customizer.php:258
+msgid "External download disclosure"
+msgstr ""
+
+#: inc/customizer.php:266
+msgid "Facebook URL"
+msgstr ""
+
+#: inc/editor.php:30
+msgid "Feature one"
+msgstr ""
+
+#: inc/editor.php:30
+msgid "Feature three"
+msgstr ""
+
+#: inc/editor.php:30
+msgid "Feature two"
+msgstr ""
+
+#: page-templates/template-sitemap.php:128
+msgid "Feeds"
+msgstr ""
+
+#: inc/editor.php:34
+#: inc/software.php:24
+msgid "File size"
+msgstr ""
+
+#: inc/customizer.php:152
+msgid "Footer & social"
+msgstr ""
+
+#: functions.php:112
+msgid "Footer column %d"
+msgstr ""
+
+#: inc/customizer.php:262
+msgid "Footer columns"
+msgstr ""
+
+#: functions.php:56
+msgid "Footer links"
+msgstr ""
+
+#: inc/customizer.php:150
+msgid "Front page"
+msgstr ""
+
+#: functions.php:98
+msgid "Front page sidebar"
+msgstr ""
+
+#: inc/customizer.php:270
+msgid "GitHub URL"
+msgstr ""
+
+#: footer.php:78
+msgid "Go to top"
+msgstr ""
+
+#: inc/software.php:47
+msgid "Graphics card"
+msgstr ""
+
+#: inc/customizer.php:207
+msgid "Green (theme default)"
+msgstr ""
+
+#: inc/software.php:46
+msgid "Hard disk space"
+msgstr ""
+
+#: inc/customizer.php:225
+msgid "Hero description"
+msgstr ""
+
+#: inc/customizer.php:224
+msgid "Hero title"
+msgstr ""
+
+#: inc/schema.php:177
+#: inc/template-tags.php:211
+#: inc/template-tags.php:261
+msgid "Home"
+msgstr ""
+
+#: page-templates/template-about.php:35
+msgid "How we link"
+msgstr ""
+
+#: inc/editor.php:37
+msgid "Info / disclaimer box"
+msgstr ""
+
+#: inc/admin.php:65
+msgid "Install plugin"
+msgstr ""
+
+#: template-parts/software/install-steps.php:19
+#: template-parts/software/toc.php:63
+msgid "Installation instructions"
+msgstr ""
+
+#: inc/software.php:32
+msgid "Interface language"
+msgstr ""
+
+#: inc/widgets.php:345
+msgid "Intro text:"
+msgstr ""
+
+#: inc/editor.php:30
+#: template-parts/software/features.php:15
+#: template-parts/software/toc.php:55
+msgid "Key features"
+msgstr ""
+
+#: inc/software.php:29
+msgid "Last update"
+msgstr ""
+
+#: index.php:17
+msgid "Latest articles"
+msgstr ""
+
+#: 404.php:57
+#: page-templates/template-sitemap.php:112
+msgid "Latest entries"
+msgstr ""
+
+#: inc/customizer.php:41
+msgid "Latest software & tutorials"
+msgstr ""
+
+#: inc/customizer.php:149
+msgid "Layout & colours"
+msgstr ""
+
+#: inc/admin.php:133
+msgid "Layout, colours and content"
+msgstr ""
+
+#: comments.php:58
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/contact-form.php:180
+msgid "Leave this field empty"
+msgstr ""
+
+#: inc/customizer.php:193
+msgid "Left"
+msgstr ""
+
+#: inc/software.php:28
+msgid "Licence"
+msgstr ""
+
+#: functions.php:86
+msgid "Main sidebar"
+msgstr ""
+
+#: inc/admin.php:74
+msgid "Manage menus"
+msgstr ""
+
+#: inc/admin.php:96
+msgid "Manage software"
+msgstr ""
+
+#: inc/admin.php:83
+msgid "Manage widgets"
+msgstr ""
+
+#: inc/software.php:45
+msgid "Memory (RAM)"
+msgstr ""
+
+#: inc/admin.php:68
+#: inc/admin.php:128
+msgid "Menus"
+msgstr ""
+
+#: inc/contact-form.php:172
+msgid "Message"
+msgstr ""
+
+#: inc/widgets.php:132
+msgid "Most commented"
+msgstr ""
+
+#: inc/comments.php:89
+#: inc/contact-form.php:61
+msgid "Name"
+msgstr ""
+
+#: inc/contact-form.php:76
+msgid "New message"
+msgstr ""
+
+#: inc/widgets.php:131
+msgid "Newest first"
+msgstr ""
+
+#: comments.php:43
+#: inc/template-tags.php:182
+#: template-parts/post-navigation.php:25
+msgid "Next"
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "No content yet"
+msgstr ""
+
+#: inc/customizer.php:194
+msgid "No sidebar (full width content)"
+msgstr ""
+
+#: inc/software-fallback.php:35
+msgid "No software found"
+msgstr ""
+
+#: template-parts/content-none.php:13
+msgid "Nothing matched your search"
+msgstr ""
+
+#: inc/customizer.php:245
+msgid "Number of entries on the front page"
+msgstr ""
+
+#: inc/widgets.php:125
+msgid "Number of entries:"
+msgstr ""
+
+#: inc/software.php:31
+#: template-parts/software/buttons.php:25
+msgid "Official website"
+msgstr ""
+
+#: template-parts/software/toc.php:80
+msgid "On this page"
+msgstr ""
+
+#: inc/customizer.php:240
+msgid "Only blog posts"
+msgstr ""
+
+#: inc/customizer.php:239
+msgid "Only software entries"
+msgstr ""
+
+#: inc/admin.php:116
+msgid "Open"
+msgstr ""
+
+#: inc/admin.php:216
+msgid "Open quick start"
+msgstr ""
+
+#: inc/admin.php:126
+msgid "Open the Customizer"
+msgstr ""
+
+#: template-parts/software/downloads.php:96
+msgid "Opens %s in a new tab"
+msgstr ""
+
+#: inc/software.php:43
+msgid "Operating system"
+msgstr ""
+
+#: inc/customizer.php:210
+msgid "Orange"
+msgstr ""
+
+#: inc/widgets.php:129
+msgid "Order:"
+msgstr ""
+
+#: template-parts/content-software.php:42
+msgid "OS"
+msgstr ""
+
+#: inc/software.php:48
+msgid "Other requirements"
+msgstr ""
+
+#: page-templates/template-contact.php:42
+msgid "Other ways to reach us"
+msgstr ""
+
+#: single-software.php:91
+#: template-parts/software/toc.php:18
+msgid "Overview"
+msgstr ""
+
+#: inc/template-tags.php:243
+msgid "Page not found"
+msgstr ""
+
+#: template-parts/software/toc.php:79
+msgid "Page sections"
+msgstr ""
+
+#: page-templates/template-sitemap.php:81
+msgid "Pages"
+msgstr ""
+
+#: page.php:35
+#: single-software.php:101
+#: single.php:58
+msgid "Pages:"
+msgstr ""
+
+#: inc/customizer.php:153
+msgid "Performance"
+msgstr ""
+
+#: inc/software-fallback.php:75
+msgid "Platform"
+msgstr ""
+
+#: inc/software-fallback.php:74
+#: inc/widgets.php:252
+#: page-templates/template-sitemap.php:47
+msgid "Platforms"
+msgstr ""
+
+#: functions.php:159
+msgid "Please wait %s seconds…"
+msgstr ""
+
+#: inc/customizer.php:227
+msgid "Popular search suggestions"
+msgstr ""
+
+#: comments.php:63
+msgid "Post comment"
+msgstr ""
+
+#: template-parts/post-navigation.php:15
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:191
+msgid "Posts navigation"
+msgstr ""
+
+#: comments.php:42
+#: inc/template-tags.php:181
+#: template-parts/post-navigation.php:18
+msgid "Previous"
+msgstr ""
+
+#: header.php:99
+msgid "Primary menu"
+msgstr ""
+
+#: functions.php:54
+msgid "Primary menu (below the header)"
+msgstr ""
+
+#: inc/software.php:44
+msgid "Processor"
+msgstr ""
+
+#: page-templates/template-about.php:52
+msgid "Program pages"
+msgstr ""
+
+#: template-parts/content-post.php:35
+msgid "Read more"
+msgstr ""
+
+#: inc/widgets.php:39
+#: inc/widgets.php:115
+msgid "Recent posts"
+msgstr ""
+
+#: inc/customizer.php:209
+msgid "Red"
+msgstr ""
+
+#: inc/admin.php:130
+msgid "Refresh this page"
+msgstr ""
+
+#: template-parts/software/related.php:44
+msgid "Related software"
+msgstr ""
+
+#: inc/customizer.php:284
+msgid "Remove the WordPress emoji script and styles"
+msgstr ""
+
+#: inc/comments.php:67
+msgid "Reply"
+msgstr ""
+
+#: inc/customizer.php:249
+msgid "Require a short countdown before revealing download links"
+msgstr ""
+
+#: page-templates/template-contact.php:53
+msgid "Response time"
+msgstr ""
+
+#: functions.php:161
+msgid "Reveal download links"
+msgstr ""
+
+#: inc/customizer.php:192
+msgid "Right (default)"
+msgstr ""
+
+#: page-templates/template-sitemap.php:130
+msgid "RSS feed"
+msgstr ""
+
+#: template-parts/software/screenshots.php:21
+#: template-parts/software/toc.php:31
+msgid "Screenshots"
+msgstr ""
+
+#: page-templates/template-sitemap.php:135
+#: searchform.php:23
+#: searchform.php:25
+msgid "Search"
+msgstr ""
+
+#: searchform.php:13
+msgid "Search for:"
+msgstr ""
+
+#: inc/template-tags.php:241
+msgid "Search results"
+msgstr ""
+
+#: search.php:18
+msgid "Search results for “%s”"
+msgstr ""
+
+#: inc/software-fallback.php:34
+#: inc/widgets.php:305
+#: inc/widgets.php:337
+msgid "Search software"
+msgstr ""
+
+#: 404.php:20
+#: inc/widgets.php:322
+msgid "Search software, tools, tutorials…"
+msgstr ""
+
+#: searchform.php:10
+msgid "Search…"
+msgstr ""
+
+#: inc/customizer.php:230
+msgid "Section heading text"
+msgstr ""
+
+#: page-templates/template-contact.php:33
+msgid "Send a message"
+msgstr ""
+
+#: inc/contact-form.php:183
+msgid "Send message"
+msgstr ""
+
+#: inc/software.php:25
+msgid "Setup file name"
+msgstr ""
+
+#: inc/editor.php:34
+#: inc/software.php:26
+msgid "Setup type"
+msgstr ""
+
+#: inc/customizer.php:255
+msgid "Show installation instructions"
+msgstr ""
+
+#: inc/widgets.php:257
+msgid "Show post counts"
+msgstr ""
+
+#: inc/customizer.php:220
+msgid "Show social icons in the header"
+msgstr ""
+
+#: inc/class-zabisoft-nav-walker.php:83
+msgid "Show submenu"
+msgstr ""
+
+#: inc/customizer.php:256
+msgid "Show the automatic table of contents"
+msgstr ""
+
+#: inc/customizer.php:226
+msgid "Show the big search form in the hero"
+msgstr ""
+
+#: inc/customizer.php:217
+msgid "Show the black top bar"
+msgstr ""
+
+#: inc/customizer.php:228
+msgid "Show the category strip"
+msgstr ""
+
+#: inc/customizer.php:223
+msgid "Show the hero banner on the front page"
+msgstr ""
+
+#: inc/customizer.php:254
+msgid "Show the screenshot gallery"
+msgstr ""
+
+#: inc/customizer.php:219
+msgid "Show the search box in the header"
+msgstr ""
+
+#: inc/customizer.php:229
+msgid "Show the section heading above the list"
+msgstr ""
+
+#: inc/customizer.php:253
+msgid "Show the system requirements table"
+msgstr ""
+
+#: inc/customizer.php:263
+msgid "Show the “Go to top” button"
+msgstr ""
+
+#: inc/customizer.php:252
+msgid "Show the “Technical setup details” table"
+msgstr ""
+
+#: sidebar.php:18
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer.php:188
+msgid "Sidebar position"
+msgstr ""
+
+#: template-parts/content-software.php:39
+msgid "Size"
+msgstr ""
+
+#: header.php:20
+msgid "Skip to content"
+msgstr ""
+
+#: inc/software-fallback.php:30
+msgid "Software"
+msgstr ""
+
+#: inc/customizer.php:238
+msgid "Software + blog posts (default)"
+msgstr ""
+
+#: inc/software-fallback.php:55
+#: inc/widgets.php:250
+#: page-templates/template-sitemap.php:35
+msgid "Software categories"
+msgstr ""
+
+#: inc/software-fallback.php:56
+msgid "Software category"
+msgstr ""
+
+#: inc/admin.php:86
+msgid "Software entries"
+msgstr ""
+
+#: inc/software-fallback.php:31
+msgid "Software entry"
+msgstr ""
+
+#: inc/editor.php:29
+msgid "Software features list"
+msgstr ""
+
+#: inc/admin.php:59
+msgid "Software manager plugin"
+msgstr ""
+
+#: inc/editor.php:34
+msgid "Software name"
+msgstr ""
+
+#: inc/widgets.php:139
+msgid "Software only"
+msgstr ""
+
+#: inc/customizer.php:151
+msgid "Software pages"
+msgstr ""
+
+#: inc/software-fallback.php:90
+msgid "Software tag"
+msgstr ""
+
+#: inc/software-fallback.php:89
+msgid "Software tags"
+msgstr ""
+
+#: inc/contact-form.php:65
+#: inc/contact-form.php:167
+msgid "Subject"
+msgstr ""
+
+#: template-parts/software/requirements.php:19
+#: template-parts/software/toc.php:47
+msgid "System requirements"
+msgstr ""
+
+#: inc/widgets.php:248
+msgid "Taxonomy:"
+msgstr ""
+
+#: inc/editor.php:34
+#: template-parts/software/specs.php:19
+#: template-parts/software/toc.php:39
+msgid "Technical setup details"
+msgstr ""
+
+#: inc/editor.php:33
+msgid "Technical setup details table"
+msgstr ""
+
+#: inc/customizer.php:269
+msgid "Telegram URL"
+msgstr ""
+
+#: inc/admin.php:213
+msgid "Thank you for installing ZabiSoft!"
+msgstr ""
+
+#: inc/admin.php:50
+msgid "Theme activated"
+msgstr ""
+
+#: inc/admin.php:123
+msgid "Theme options"
+msgstr ""
+
+#: 404.php:15
+msgid "This page could not be found"
+msgstr ""
+
+#: inc/widgets.php:121
+#: inc/widgets.php:244
+#: inc/widgets.php:341
+msgid "Title:"
+msgstr ""
+
+#: functions.php:55
+msgid "Top bar menu"
+msgstr ""
+
+#: inc/customizer.php:218
+msgid "Top bar right side text"
+msgstr ""
+
+#: inc/admin.php:184
+msgid "Upload plugin"
+msgstr ""
+
+#: inc/customizer.php:246
+msgid "Use the main sidebar on the front page too"
+msgstr ""
+
+#: template-parts/card.php:29
+msgid "v%s"
+msgstr ""
+
+#: inc/software.php:23
+#: template-parts/content-software.php:36
+msgid "Version"
+msgstr ""
+
+#: single-software.php:52
+#: template-parts/software/specs.php:28
+msgid "Version %s"
+msgstr ""
+
+#: front-page.php:117
+msgid "View all"
+msgstr ""
+
+#: template-parts/content-software.php:52
+msgid "View details & download"
+msgstr ""
+
+#: inc/customizer.php:211
+msgid "Violet"
+msgstr ""
+
+#: inc/comments.php:97
+msgid "Website"
+msgstr ""
+
+#: inc/customizer.php:234
+msgid "What to list on the front page"
+msgstr ""
+
+#: page-templates/template-about.php:31
+msgid "What we publish"
+msgstr ""
+
+#: inc/admin.php:77
+#: inc/admin.php:129
+msgid "Widgets"
+msgstr ""
+
+#: inc/customizer.php:267
+msgid "X / Twitter URL"
+msgstr ""
+
+#: page-templates/template-sitemap.php:133
+msgid "XML sitemap"
+msgstr ""
+
+#: template-parts/related.php:29
+msgid "You may also like"
+msgstr ""
+
+#: inc/contact-form.php:161
+msgid "Your email"
+msgstr ""
+
+#: inc/contact-form.php:157
+msgid "Your name"
+msgstr ""
+
+#: inc/customizer.php:268
+msgid "YouTube URL"
+msgstr ""
+
+#: inc/editor.php:24
+msgid "ZabiSoft"
+msgstr ""
+
+#: inc/editor.php:81
+msgid "ZabiSoft download button"
+msgstr ""
+
+#: inc/editor.php:73
+msgid "ZabiSoft specifications table"
+msgstr ""
+
+#: inc/admin.php:19
+#: inc/admin.php:20
+msgid "ZabiSoft theme"
+msgstr ""
+
+#: inc/customizer.php:142
+msgid "ZabiSoft theme options"
+msgstr ""
+
+#: inc/admin.php:181
+msgid "ZabiSoft theme:"
+msgstr ""
+
+#: inc/admin.php:101
+msgid "ZabiSoft — quick start"
+msgstr ""
+
+#: inc/widgets.php:174
+msgid "ZabiSoft: category list"
+msgstr ""
+
+#: inc/widgets.php:23
+msgid "ZabiSoft: posts with thumbnails"
+msgstr ""
+
+#: inc/widgets.php:289
+msgid "ZabiSoft: software search"
+msgstr ""

@@ -1,0 +1,11 @@
+# Reference material collected while studying the design (not part of the
+# deliverable and not ours to redistribute).
+image-search/
+
+# Local editor / OS noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Test harness leftovers that may end up in the tree
+.wptest/

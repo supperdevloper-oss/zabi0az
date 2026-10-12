@@ -1,0 +1,156 @@
+/* ZabiSoft Software Manager – admin styles */
+
+.zsm-help {
+	color: #50575e;
+	font-size: 13px;
+	margin: 4px 0 12px;
+}
+
+.zsm-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 12px 18px;
+}
+
+.zsm-field label {
+	display: block;
+	margin-bottom: 3px;
+}
+
+.zsm-field input[type="text"],
+.zsm-field input[type="url"],
+.zsm-field input[type="date"],
+.zsm-field input[type="number"],
+.zsm-field textarea {
+	width: 100%;
+}
+
+.zsm-field--wide {
+	grid-column: 1 / -1;
+}
+
+.zsm-mirrors {
+	margin: 6px 0 12px;
+}
+
+.zsm-mirror {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-left: 4px solid #2271b1;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	padding: 10px 14px 14px;
+}
+
+.zsm-mirror__head {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+	margin-bottom: 8px;
+}
+
+.zsm-mirror__handle {
+	color: #c3c4c7;
+	cursor: move;
+}
+
+.zsm-mirror__title {
+	flex: 1 1 auto;
+}
+
+.zsm-mirror__remove {
+	color: #b32d2e;
+}
+
+.zsm-status {
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 11px;
+	line-height: 1.6;
+	padding: 1px 9px;
+	vertical-align: middle;
+}
+
+.zsm-status--ok {
+	background: #edfaef;
+	border: 1px solid #a7e0b0;
+	color: #14602a;
+}
+
+.zsm-status--bad {
+	background: #fdeaea;
+	border: 1px solid #f0a6a6;
+	color: #8a1f1f;
+}
+
+.zsm-missing {
+	color: #b32d2e;
+	font-style: italic;
+}
+
+.zsm-mirror__check {
+	margin: 4px 0 0;
+}
+
+.zsm-check-result {
+	margin-left: 8px;
+}
+
+.zsm-check-result.is-ok {
+	color: #14602a;
+}
+
+.zsm-check-result.is-bad {
+	color: #8a1f1f;
+}
+
+.zsm-screenshots__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	list-style: none;
+	margin: 8px 0;
+	padding: 0;
+}
+
+.zsm-screenshots__list li {
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	position: relative;
+}
+
+.zsm-screenshots__list img {
+	display: block;
+	border-radius: 3px;
+	height: 80px;
+	object-fit: cover;
+	width: 120px;
+}
+
+.zsm-screenshots__remove {
+	background: #1d2327;
+	border: 0;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+	height: 20px;
+	line-height: 18px;
+	position: absolute;
+	right: -8px;
+	top: -8px;
+	width: 20px;
+}
+
+.zsm-help-list {
+	list-style: decimal;
+	margin-left: 18px;
+}
+
+.zsm-help-list li {
+	margin-bottom: 6px;
+}
+
+.zsm-settings .form-table th {
+	width: 260px;
+}
