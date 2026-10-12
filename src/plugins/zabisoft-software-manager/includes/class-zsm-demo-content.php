@@ -826,7 +826,9 @@ class ZSM_Demo_Content {
 		$items = array(
 			array(
 				'title' => __( 'Home', 'zabisoft-software-manager' ),
-				'url'   => home_url( '/' ),
+				// A relative URL keeps the link valid whatever domain the site
+				// is served from (preview host, staging, live).
+				'url'   => '/',
 			),
 		);
 
@@ -842,10 +844,10 @@ class ZSM_Demo_Content {
 			$items[] = array( 'object' => array( 'software', $last_id ) );
 		}
 
-		$items[] = array(
-			'title' => __( 'Contact us', 'zabisoft-software-manager' ),
-			'url'   => isset( $pages['contact-us'] ) ? get_permalink( $pages['contact-us'] ) : home_url( '/' ),
-		);
+		if ( ! empty( $pages['contact-us'] ) ) {
+			// A real page item, so the link follows the page if its slug changes.
+			$items[] = array( 'page' => (int) $pages['contact-us'] );
+		}
 
 		foreach ( $items as $item ) {
 			$order++;
@@ -880,6 +882,21 @@ class ZSM_Demo_Content {
 						'menu-item-object'    => 'software',
 						'menu-item-object-id' => $object->ID,
 						'menu-item-title'     => __( 'Getintopc com', 'zabisoft-software-manager' ),
+						'menu-item-status'    => 'publish',
+						'menu-item-position'  => $order,
+					)
+				);
+				continue;
+			}
+
+			if ( isset( $item['page'] ) ) {
+				wp_update_nav_menu_item(
+					$menu_id,
+					0,
+					array(
+						'menu-item-type'      => 'post_type',
+						'menu-item-object'    => 'page',
+						'menu-item-object-id' => (int) $item['page'],
 						'menu-item-status'    => 'publish',
 						'menu-item-position'  => $order,
 					)

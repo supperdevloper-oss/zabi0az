@@ -143,6 +143,30 @@ img {
 	border: 0;
 }
 
+/* Inline SVG icons.
+   The reset above gives every svg `max-width: 100%; height: auto`, which leaves
+   an icon without an explicit size at the browser default of 300 x 150 px. The
+   rule below keeps icons at the size of the surrounding text, coloured with the
+   text colour. Contexts that need a different size (menu toggle, meta line,
+   buttons) override it with a more specific selector. */
+.zs-icon {
+	width: 1em;
+	height: 1em;
+	flex: 0 0 auto;
+	fill: currentColor;
+	vertical-align: -0.125em;
+}
+
+.zs-go-top .zs-icon {
+	width: 14px;
+	height: 14px;
+}
+
+.zs-submenu-toggle .zs-icon {
+	width: 16px;
+	height: 16px;
+}
+
 figure {
 	margin: 0 0 1.2em;
 }
@@ -2465,6 +2489,13 @@ input[type="button"]:hover,
 		min-width: 0;
 	}
 
+	/* The top bar carries secondary links; on a phone they would wrap into
+	   five or six rows above the logo, so they are hidden here – the same
+	   links are one tap away inside the primary menu. */
+	.zs-topbar {
+		display: none;
+	}
+
 	.zs-nav__toggle {
 		display: block;
 	}
@@ -2844,6 +2875,7 @@ input[type="button"]:hover,
 /* ==========================================================================
    20. Print styles
    ========================================================================== */
+@media print {
 	.zs-header,
 	.zs-nav,
 	.zs-topbar,

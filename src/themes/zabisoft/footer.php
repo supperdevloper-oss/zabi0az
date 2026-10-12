@@ -36,7 +36,7 @@
 
 		<div class="zs-container">
 			<?php
-			if ( has_nav_menu( 'footer' ) ) {
+			if ( zabisoft_has_menu( 'footer' ) ) {
 				wp_nav_menu(
 					array(
 						'theme_location' => 'footer',

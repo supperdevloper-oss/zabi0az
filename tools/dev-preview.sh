@@ -10,6 +10,10 @@
 #     tools/dev-preview.sh            # build / repair the installation
 #     bash ~/.wptest/serve.sh         # start the preview server (port 9400)
 #
+# Run this script while the preview server is stopped: both write to the same
+# SQLite file, and an instance that is still running can write a stale copy of
+# the options back over the freshly imported ones.
+#
 # Requirements: node 18+, npm, curl, tar. Only the WordPress GitHub mirrors and
 # the npm registry are used.
 #
@@ -273,7 +277,51 @@ echo "ready\n";
 PHP
 
 # ---------------------------------------------------------------------------
-# 6. Run both scripts inside WordPress, with the repository mounted live
+# 6. A PHP syntax linter (php-parser), so checked-in code can be verified
+# ---------------------------------------------------------------------------
+cat > "$HARNESS/lint.mjs" <<'JS'
+// PHP syntax check with php-parser: node lint.mjs <dir-or-file>
+import { readdirSync, statSync, readFileSync } from 'node:fs';
+import { join, extname } from 'node:path';
+import { createRequire } from 'node:module';
+
+const require = createRequire( import.meta.url );
+const parser = require( 'php-parser' );
+const engine = new parser.Engine( { parser: { extractDoc: true, suppressErrors: false }, ast: { withPositions: true } } );
+
+const files = [];
+
+function walk( path ) {
+	if ( statSync( path ).isDirectory() ) {
+		for ( const entry of readdirSync( path ) ) {
+			walk( join( path, entry ) );
+		}
+	} else if ( extname( path ) === '.php' ) {
+		files.push( path );
+	}
+}
+
+for ( const target of process.argv.slice( 2 ) ) {
+	walk( target );
+}
+
+let bad = 0;
+
+for ( const file of files ) {
+	try {
+		engine.parseCode( readFileSync( file, 'utf8' ), file );
+	} catch ( error ) {
+		bad++;
+		console.log( 'FAIL ' + file + ' line ' + ( error.lineNumber || '?' ) + ': ' + ( error.message || error ) );
+	}
+}
+
+console.log( `php-parser checked ${ files.length } files, ${ bad } with problems.` );
+process.exit( bad ? 1 : 0 );
+JS
+
+# ---------------------------------------------------------------------------
+# 7. Run both scripts inside WordPress, with the repository mounted live
 # ---------------------------------------------------------------------------
 run_php() {
 	node "$CLI" php \
@@ -295,7 +343,7 @@ run_php setup.php
 run_php setup.php
 
 # ---------------------------------------------------------------------------
-# 7. The server script
+# 8. The server script
 # ---------------------------------------------------------------------------
 cat > "$HARNESS/serve.sh" <<EOF
 #!/bin/bash

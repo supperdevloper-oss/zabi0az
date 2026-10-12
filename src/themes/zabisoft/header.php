@@ -24,7 +24,7 @@
 	<?php if ( zabisoft_mod( 'show_topbar' ) ) : ?>
 		<div class="zs-topbar">
 			<div class="zs-container">
-				<?php if ( has_nav_menu( 'topbar' ) ) : ?>
+				<?php if ( zabisoft_has_menu( 'topbar' ) ) : ?>
 					<?php
 					wp_nav_menu(
 						array(
@@ -104,7 +104,7 @@
 			</button>
 
 			<?php
-			if ( has_nav_menu( 'primary' ) ) {
+			if ( zabisoft_has_menu( 'primary' ) ) {
 				wp_nav_menu(
 					array(
 						'theme_location' => 'primary',

@@ -32,6 +32,8 @@ function zabisoft_icon_symbols() {
 		'check'    => '<path d="M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z"/>',
 		'arrow-up' => '<path d="M12 4l8 8h-5v8h-6v-8H4z"/>',
 		'list'     => '<path d="M4 6h2v2H4zm4 0h12v2H8zM4 11h2v2H4zm4 0h12v2H8zM4 16h2v2H4zm4 0h12v2H8z"/>',
+		'chevron'  => '<path d="M12 15.4L5.6 9l1.4-1.4 5 5 5-5L18.4 9z"/>',
+		'external' => '<path d="M14 3h7v7h-2V6.4l-8.3 8.3-1.4-1.4L17.6 5H14V3zM5 5h5v2H7v10h10v-3h2v5H5V5z"/>',
 	);
 
 	$out = '<svg class="zs-sprite" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><defs>';
@@ -248,6 +250,35 @@ function zabisoft_breadcrumbs() {
 	echo '<nav class="zs-breadcrumbs" aria-label="' . esc_attr__( 'Breadcrumb', 'zabisoft' ) . '">';
 	echo wp_kses_post( implode( '<span class="zs-sep">/</span>', $items ) );
 	echo '</nav>';
+}
+
+/**
+ * Does a menu location really resolve to a menu with at least one item?
+ *
+ * has_nav_menu() only checks that an assignment exists. When the assigned menu
+ * has since been deleted (or emptied), wp_nav_menu() prints nothing at all and
+ * the navigation bar would collapse into an empty strip — the check below sends
+ * those cases to the fallback menu instead.
+ *
+ * @param string $location Theme location name.
+ * @return bool
+ */
+function zabisoft_has_menu( $location ) {
+	$locations = get_nav_menu_locations();
+
+	if ( empty( $locations[ $location ] ) ) {
+		return false;
+	}
+
+	$menu = wp_get_nav_menu_object( $locations[ $location ] );
+
+	if ( ! $menu || is_wp_error( $menu ) ) {
+		return false;
+	}
+
+	$items = wp_get_nav_menu_items( $menu->term_id );
+
+	return ! empty( $items );
 }
 
 /**

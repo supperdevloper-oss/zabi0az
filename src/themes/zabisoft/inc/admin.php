@@ -66,8 +66,8 @@ function zabisoft_render_admin_page() {
 		),
 		array(
 			'label' => __( 'Menus', 'zabisoft' ),
-			'done'  => has_nav_menu( 'primary' ),
-			'text'  => has_nav_menu( 'primary' )
+			'done'  => zabisoft_has_menu( 'primary' ),
+			'text'  => zabisoft_has_menu( 'primary' )
 				? __( 'A primary menu is assigned.', 'zabisoft' )
 				: __( 'No primary menu yet — the theme prints a temporary list of your categories.', 'zabisoft' ),
 			'link'  => admin_url( 'nav-menus.php' ),
