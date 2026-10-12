@@ -24,6 +24,28 @@ class ZSM_Demo_Content {
 	 */
 	public function __construct() {
 		add_action( 'admin_init', array( $this, 'maybe_handle' ) );
+		add_action( 'admin_init', array( $this, 'maybe_seed_pending_widgets' ), 20 );
+	}
+
+	/**
+	 * The widgets can only be placed once the theme that registers them is
+	 * loaded. If the demo content was imported in the same request that
+	 * activated the theme, remember it and do it on the next admin page load.
+	 *
+	 * @return void
+	 */
+	public function maybe_seed_pending_widgets() {
+		if ( ! get_option( 'zsm_demo_widgets_pending' ) ) {
+			return;
+		}
+
+		if ( class_exists( 'ZabiSoft_Posts_Widget' ) ) {
+			$this->import_widgets();
+
+			if ( get_option( 'zsm_demo_sidebars' ) ) {
+				delete_option( 'zsm_demo_widgets_pending' );
+			}
+		}
 	}
 
 	/**
@@ -676,6 +698,26 @@ class ZSM_Demo_Content {
 	}
 
 	/**
+	 * Some installations still carry a legacy copy of the widget arrangement in
+	 * the theme mods. That copy wins over the option on the front end, so it is
+	 * removed whenever this plugin writes the arrangement itself.
+	 *
+	 * @return void
+	 */
+	protected function clear_legacy_widget_mod() {
+		$key  = 'theme_mods_' . get_stylesheet();
+		$mods = get_option( $key );
+
+		if ( ! is_array( $mods ) || ! isset( $mods['sidebars_widgets'] ) ) {
+			return;
+		}
+
+		unset( $mods['sidebars_widgets'] );
+
+		update_option( $key, $mods );
+	}
+
+	/**
 	 * Fill the main sidebar with the theme widgets.
 	 *
 	 * Widgets the owner already arranged are never overwritten: the previous
@@ -684,7 +726,15 @@ class ZSM_Demo_Content {
 	 * @return void
 	 */
 	protected function import_widgets() {
-		if ( ! in_array( get_stylesheet(), array( 'zabisoft', 'zabisoft-zip' ), true ) || ! class_exists( 'ZabiSoft_Posts_Widget' ) ) {
+		if ( ! in_array( get_stylesheet(), array( 'zabisoft', 'zabisoft-zip' ), true ) ) {
+			return;
+		}
+
+		if ( ! class_exists( 'ZabiSoft_Posts_Widget' ) ) {
+			// The theme was activated in this very request, so its widgets are
+			// not registered yet – try again on the next admin page load.
+			update_option( 'zsm_demo_widgets_pending', 1, false );
+
 			return;
 		}
 
@@ -721,6 +771,12 @@ class ZSM_Demo_Content {
 			'text'  => __( 'Type a program name — for example “office” or “player” — then press Enter.', 'zabisoft-software-manager' ),
 		);
 
+		// WordPress stores multi-widgets with a `_multiwidget` marker; without it
+		// the instance is wrapped twice and the widget renders nothing.
+		$posts['_multiwidget']  = 1;
+		$terms['_multiwidget']  = 1;
+		$search['_multiwidget'] = 1;
+
 		update_option( 'widget_zabisoft_posts', $posts );
 		update_option( 'widget_zabisoft_terms', $terms );
 		update_option( 'widget_zabisoft_search', $search );
@@ -735,6 +791,8 @@ class ZSM_Demo_Content {
 		} else {
 			update_option( 'sidebars_widgets', $sidebars );
 		}
+
+		$this->clear_legacy_widget_mod();
 	}
 
 	/**
@@ -931,10 +989,13 @@ class ZSM_Demo_Content {
 				update_option( 'sidebars_widgets', $sidebars );
 			}
 
+			$this->clear_legacy_widget_mod();
+
 			delete_option( 'zsm_demo_sidebars' );
 		}
 
 		delete_option( 'zsm_demo_objects' );
 		delete_option( 'zsm_demo_imported' );
+		delete_option( 'zsm_demo_widgets_pending' );
 	}
 }

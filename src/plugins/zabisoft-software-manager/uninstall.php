@@ -27,6 +27,7 @@ $zsm_options = array(
 	'zsm_demo_imported',
 	'zsm_demo_objects',
 	'zsm_demo_sidebars',
+	'zsm_demo_widgets_pending',
 );
 
 $zsm_delete = (int) get_option( 'zsm_delete_data', 0 );
