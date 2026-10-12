@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="ZabiSoft placeholder">
+	<title>ZabiSoft placeholder image</title>
+	<defs>
+		<linearGradient id="zsph" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#eef1f4"/>
+			<stop offset="1" stop-color="#dfe4ea"/>
+		</linearGradient>
+	</defs>
+	<rect width="800" height="500" fill="url(#zsph)"/>
+	<g fill="#b9c3cd">
+		<rect x="250" y="150" width="300" height="180" rx="12" fill="#ffffff"/>
+		<circle cx="330" cy="215" r="26"/>
+		<path d="M270 300 L350 240 L410 285 L470 225 L530 300 Z"/>
+	</g>
+	<g fill="none" stroke="#b9c3cd" stroke-width="6" stroke-linecap="round">
+		<rect x="360" y="120" width="170" height="120" rx="10" fill="#ffffff"/>
+		<path d="M360 208 L410 168 L440 196 L470 160 L530 208"/>
+		<path d="M415 240 l0 60 M385 270 l30 30 30 -30" stroke="#93a3b1"/>
+	</g>
+	<text x="400" y="420" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#8b98a5">No cover image yet</text>
+</svg>
