@@ -118,7 +118,7 @@ if ( $zs_is_static ) :
 				</a>
 			</div>
 
-			<div class="zs-post-list">
+			<div class="<?php echo esc_attr( zabisoft_list_class() ); ?>">
 				<?php
 				while ( $zs_listing->have_posts() ) :
 					$zs_listing->the_post();

@@ -34,6 +34,7 @@ Tags: two-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, cust
 	--zs-surface-alt: #f7f7f7;
 	--zs-border: #e2e2e2;
 	--zs-border-dotted: #e8e8e8;
+	--zs-entry-border: #333333;
 
 	--zs-text: #333333;
 	--zs-text-soft: #666666;
@@ -548,7 +549,8 @@ input[type="button"]:hover,
 
 .zs-site-title {
 	margin: 0;
-	font-size: 2.35rem;
+	font-family: "Arial Black", "Helvetica Black", Gadget, sans-serif;
+	font-size: 2.55rem;
 	font-weight: 900;
 	letter-spacing: -0.03em;
 	line-height: 1.1;
@@ -559,7 +561,6 @@ input[type="button"]:hover,
 .zs-site-title a {
 	color: var(--zs-header-text);
 	text-decoration: none;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 .zs-site-title a:hover {
@@ -726,10 +727,11 @@ input[type="button"]:hover,
 
 .zs-nav__list > li > a {
 	display: block;
-	padding: 13px 18px;
+	padding: 13px 10px;
 	color: var(--zs-nav-link);
-	font-size: 0.95rem;
-	font-weight: 700;
+	font-size: 0.85rem;
+	font-weight: 600;
+	letter-spacing: -0.005em;
 	text-decoration: none;
 	text-shadow: 0 1px 1px #fff;
 }
@@ -903,6 +905,24 @@ input[type="button"]:hover,
 	border-bottom: 1px dotted var(--zs-border-dotted);
 }
 
+/* `list_boxed` (on by default, like the reference): every entry sits in its
+   own frame instead of being separated by a dotted line. */
+.zs-post-list--boxed .zs-post {
+	margin-bottom: 20px;
+	padding: 15px;
+	border: 2px solid var(--zs-entry-border);
+	border-radius: var(--zs-radius);
+	background: var(--zs-surface);
+}
+
+.zs-post-list--boxed .zs-post__inner {
+	gap: 16px;
+}
+
+.zs-post-list--boxed .zs-readmore {
+	margin-top: 0.9em;
+}
+
 .zs-post:last-child {
 	border-bottom: 0;
 }
@@ -937,6 +957,11 @@ input[type="button"]:hover,
 	border: var(--zs-thumb-border);
 	border-radius: var(--zs-radius);
 	color: #b9b9b9;
+}
+
+.zs-post__thumb--placeholder .zs-icon {
+	width: 36px;
+	height: 36px;
 }
 
 .zs-post__body {
@@ -1956,6 +1981,13 @@ input[type="button"]:hover,
 .zs-post-nav a {
 	text-decoration: none;
 	font-weight: 600;
+}
+
+.zs-post-nav--top {
+	margin: 0 0 18px;
+	padding: 0 0 12px;
+	border-top: 0;
+	border-bottom: 1px dotted var(--zs-border-dotted);
 }
 
 .zs-post-nav__label {

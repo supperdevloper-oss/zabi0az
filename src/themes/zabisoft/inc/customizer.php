@@ -20,7 +20,7 @@ function zabisoft_customizer_defaults() {
 		'container_width'      => 1140,
 		'sidebar_position'     => 'right',      // right | left | none.
 		'color_scheme'         => 'green',      // green | blue | red | orange | violet.
-		'show_topbar'          => 1,
+		'show_topbar'          => 0,
 		'topbar_text'          => '',
 		'header_search'        => 1,
 		'show_social'          => 1,
@@ -30,14 +30,18 @@ function zabisoft_customizer_defaults() {
 		'social_telegram'      => '',
 		'social_github'        => '',
 
+		// Listings (front page, categories, archives, search).
+		'listing_specs'        => 0,
+		'list_boxed'           => 1,
+
 		// Front page.
-		'front_hero'           => 1,
+		'front_hero'           => 0,
 		'front_hero_title'     => __( 'Download Free Your Desired Software', 'zabisoft' ),
 		'front_hero_text'      => __( 'Hand picked installers, portable tools, drivers and operating systems — with version, file size, system requirements and verified mirrors on every page.', 'zabisoft' ),
 		'front_hero_search'    => 1,
 		'front_quick_links'    => '',
-		'front_category_strip' => 1,
-		'front_sections'       => 1,
+		'front_category_strip' => 0,
+		'front_sections'       => 0,
 		'front_section_title'  => __( 'Latest software & tutorials', 'zabisoft' ),
 		'front_posts_option'   => 'merged',     // merged | software | posts.
 		'front_posts_count'    => 10,
@@ -220,6 +224,8 @@ function zabisoft_customize_register( $wp_customize ) {
 	$add( 'show_social', 'zabisoft_design', __( 'Show social icons in the header', 'zabisoft' ), 'checkbox', array( 'sanitize_callback' => 'zabisoft_sanitize_checkbox' ) );
 
 	// Front page -------------------------------------------------------------.
+	$	$add( 'list_boxed', 'zabisoft_front', __( 'Box every entry in the listings (2px frame)', 'zabisoft' ), 'checkbox', array( 'sanitize_callback' => 'zabisoft_sanitize_checkbox' ) );
+	$add( 'listing_specs', 'zabisoft_front', __( 'Show the version, size and system chips inside listings', 'zabisoft' ), 'checkbox', array( 'sanitize_callback' => 'zabisoft_sanitize_checkbox' ) );
 	$add( 'front_hero', 'zabisoft_front', __( 'Show the hero banner on the front page', 'zabisoft' ), 'checkbox', array( 'sanitize_callback' => 'zabisoft_sanitize_checkbox' ) );
 	$add( 'front_hero_title', 'zabisoft_front', __( 'Hero title', 'zabisoft' ), 'text' );
 	$add( 'front_hero_text', 'zabisoft_front', __( 'Hero description', 'zabisoft' ), 'textarea', array( 'sanitize_callback' => 'sanitize_textarea_field' ) );

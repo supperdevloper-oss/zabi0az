@@ -7,7 +7,7 @@
 
 if ( have_posts() ) :
 
-	echo '<div class="zs-post-list">';
+	printf( '<div class="%s">', esc_attr( zabisoft_list_class() ) );
 
 	while ( have_posts() ) :
 		the_post();

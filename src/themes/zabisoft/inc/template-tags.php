@@ -52,6 +52,26 @@ function zabisoft_icon_symbols() {
  * @param string $class Extra CSS classes.
  * @return void
  */
+/**
+ * Classes for a listing wrapper (`.zs-post-list`).
+ *
+ * @param string $extra Extra class.
+ * @return string
+ */
+function zabisoft_list_class( $extra = '' ) {
+	$classes = array( 'zs-post-list' );
+
+	if ( zabisoft_mod( 'list_boxed' ) ) {
+		$classes[] = 'zs-post-list--boxed';
+	}
+
+	if ( $extra ) {
+		$classes[] = $extra;
+	}
+
+	return implode( ' ', $classes );
+}
+
 function zabisoft_icon( $name, $class = 'zs-icon' ) {
 	printf(
 		'<svg class="%1$s" aria-hidden="true" focusable="false"><use href="#zs-icon-%2$s"></use></svg>',

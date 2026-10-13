@@ -61,7 +61,12 @@ while ( have_posts() ) :
 			</ul>
 		</header>
 
-		<?php get_template_part( 'template-parts/software/buttons' ); ?>
+		<?php
+		// The reference site shows the previous / next entry above the title.
+		get_template_part( 'template-parts/post-navigation', 'top' );
+
+		get_template_part( 'template-parts/software/buttons' );
+		?>
 
 		<?php if ( has_post_thumbnail() ) : ?>
 			<figure class="zs-entry__thumbnail">
@@ -111,13 +116,12 @@ while ( have_posts() ) :
 		}
 
 		if ( $zs_has_data ) {
+			get_template_part( 'template-parts/software/features' );
 			get_template_part( 'template-parts/software/specs' );
 
 			if ( zabisoft_mod( 'show_requirements' ) ) {
 				get_template_part( 'template-parts/software/requirements' );
 			}
-
-			get_template_part( 'template-parts/software/features' );
 
 			if ( zabisoft_mod( 'show_install_steps' ) ) {
 				get_template_part( 'template-parts/software/install-steps' );

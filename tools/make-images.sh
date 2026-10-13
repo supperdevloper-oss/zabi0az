@@ -15,7 +15,12 @@ mkdir -p "$DEMO"
 
 # ---------------------------------------------------------------------------
 # 1. Theme screenshot (1200 x 900)
+#
+# The screenshot shipped in src/themes/zabisoft is a real capture of the
+# running theme (see README), so this mock is only drawn when asked for:
+#   bash tools/make-images.sh --with-screenshot
 # ---------------------------------------------------------------------------
+if [ "${1:-}" = '--with-screenshot' ]; then
 convert -size 1200x900 xc:'#ececec' \
 	-fill '#101820' -draw 'rectangle 0,0 1200,118' \
 	-fill '#1d2c3d' -draw 'rectangle 0,0 1200,58' \
@@ -81,6 +86,9 @@ convert -size 1200x900 xc:'#ececec' \
 	-fill '#cdcdcd' -draw 'rectangle 0,860 1200,900' \
 	-font "$FONT" -pointsize 15 -fill '#333333' -annotate +470+886 '© 2026 ZabiSoft — all rights reserved' \
 	"$THEME/screenshot.png"
+else
+	echo 'Skipping the theme screenshot; pass --with-screenshot to redraw the mock.'
+fi
 
 # ---------------------------------------------------------------------------
 # 2. Demo cover images (800 x 500)
@@ -108,6 +116,10 @@ make_cover "$DEMO/cover-graphics.jpg"  'Image editor'      'layers · masks · p
 make_cover "$DEMO/cover-utility.jpg"   'File utility'      'archive · compress · share'  '#5a5a6e'
 make_cover "$DEMO/cover-3d.jpg"        '3D creation'       'modelling · render · video'  '#8a6a1f'
 make_cover "$DEMO/cover-audio.jpg"     'Audio tool'        'record · edit · export'      '#6a4ea3'
+make_cover "$DEMO/cover-os.jpg"        'Operating system'  'install · update · drivers'  '#b5561f'
+make_cover "$DEMO/cover-security.jpg"  'Security scanner'  'scan · protect · report'     '#2f4f6f'
+make_cover "$DEMO/cover-recovery.jpg"  'Data recovery'     'partition · files · rescue'  '#4a4a5a'
+make_cover "$DEMO/cover-download.jpg"  'Download manager'  'queue · resume · capture'    '#1f6f6a'
 
 # ---------------------------------------------------------------------------
 # 3. Demo screenshots (1000 x 625)

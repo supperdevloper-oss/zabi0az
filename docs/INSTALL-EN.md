@@ -127,14 +127,41 @@ are licensed to you.
 
 ## 7. Demo content
 
-**Software → Settings → Demo content → Import demo content** creates six complete software entries
-(images included, links pointing at the publishers' own websites), the six
-standard pages, two blog posts and the two menus. “Remove demo content” deletes
-exactly what it created. Nothing is imported automatically.
+**Software → Settings → Demo content → Import demo content** creates ten complete
+software entries covering every category used in the menu (images included, links
+pointing at the publishers' own websites), eight categories, the six standard
+pages, three blog posts and the two menus — the main menu carries the same nine
+items in the same order as the reference site, and both menus are assigned to the
+theme locations for you. “Remove demo content” deletes exactly what it created.
+Nothing is imported automatically.
 
 ---
 
-## 8. Troubleshooting
+## 8. Appearance of the listings
+
+**Appearance → Customize → Front page** collects the options that decide how the
+front page and the archives look:
+
+* **Box every entry in the listings** — draws a 2 px frame around each entry, like
+  the reference site. On by default; turn it off for a plain list with dotted
+  separators.
+* **Show the version, size and system chips inside listings** — off by default so
+  the listings match the reference. The full specification table stays on every
+  software page either way.
+* **Show the hero banner** / **Show the category strip** — optional extras for the
+  top of the front page. Off by default, because the reference starts straight
+  with the list.
+* **Number of entries on the front page** — ten by default, which produces the
+  `1 2 3 … Next »` pagination under the list.
+* **Show the section heading above the list** — off by default.
+
+The black **top bar** is off by default as well. To use it, create a second menu
+(About, Contact, Privacy…) and assign it to the *Top bar* location under
+Appearance → Menus, then tick *Show the black top bar* in the Customizer.
+
+---
+
+## 9. Troubleshooting
 
 **Category or software pages return 404.** Settings → Permalinks → Save
 Changes. If it persists, deactivate and reactivate the plugin, then save the

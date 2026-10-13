@@ -30,7 +30,7 @@ $zs_os      = (string) get_post_meta( get_the_ID(), '_zs_req_os', true );
 
 			<?php zabisoft_entry_meta(); ?>
 
-			<?php if ( $zs_version || $zs_size || $zs_os ) : ?>
+			<?php if ( zabisoft_mod( 'listing_specs' ) && ( $zs_version || $zs_size || $zs_os ) ) : ?>
 				<ul class="zs-specs-inline">
 					<?php if ( $zs_version ) : ?>
 						<li><span><?php esc_html_e( 'Version', 'zabisoft' ); ?></span> <?php echo esc_html( $zs_version ); ?></li>
@@ -49,7 +49,7 @@ $zs_os      = (string) get_post_meta( get_the_ID(), '_zs_req_os', true );
 			</div>
 
 			<a class="zs-readmore" href="<?php the_permalink(); ?>">
-				<?php esc_html_e( 'View details & download', 'zabisoft' ); ?>
+				<?php esc_html_e( 'Read More', 'zabisoft' ); ?>
 			</a>
 		</div>
 	</div>

@@ -293,6 +293,114 @@ class ZSM_Demo_Content {
 				'excerpt'  => 'Record and edit multi track audio, remove background noise and export to every common audio format.',
 				'content'  => "<p>Audacity is used for podcast editing, lecture recording, sound repair and quick audio conversion.</p>\n<p>Both the installer and the portable archive are offered; the portable build runs from a USB stick without installation rights.</p>",
 			),
+			array(
+				'title'     => 'Ubuntu Desktop 24.04 LTS Free Download',
+				'cat'       => 'operating-systems',
+				'cover'     => 'os',
+				'platforms' => array( 'Linux' ),
+				'version'   => '24.04.3 LTS',
+				'size'      => '5.7 GB',
+				'setup'     => 'ubuntu-24.04.3-desktop-amd64.iso',
+				'type'      => 'ISO image / offline installer',
+				'compat'    => '64-bit (x64)',
+				'licence'   => 'Free and open source (GPL and others)',
+				'date'      => gmdate( 'Y-m-d', strtotime( '-2 days' ) ),
+				'dev'       => 'Canonical',
+				'site'      => 'https://ubuntu.com/download/desktop',
+				'langs'     => 'English, Arabic, French, 60+ more',
+				'req'       => array(
+					'os'   => 'A 64-bit PC with UEFI or BIOS',
+					'cpu'  => 'Dual core 2 GHz or faster',
+					'ram'  => '4 GB (8 GB recommended)',
+					'disk' => '25 GB of free hard disk space',
+					'gpu'  => 'Any adapter with a community or vendor driver',
+				),
+				'features' => "Long term support release with security updates until 2029\nComplete desktop with browser, office suite and media applications\nSigned ISO image that can be verified before installing\nRuns live from the USB stick beside an existing system\nSoftware centre with tens of thousands of free applications",
+				'steps'    => "Download the ISO image and check its SHA-256 checksum\nWrite it to a USB stick with Rufus or Balena Etcher\nBoot the computer from the stick and choose Try or Install\nPick the language, keyboard layout and destination disk\nCreate your account and restart when the installer finishes",
+				'excerpt'  => 'A free long term support desktop system with a complete set of applications, regular security updates and full Arabic support.',
+				'content'  => "<p>Ubuntu Desktop is built on the same open source foundation as the other programs on this page: the system, the drivers and every application can be inspected, replaced or removed. The installer detects an existing Windows installation and offers either to replace it or to keep both systems side by side.</p>\n<p>Version 24.04 is a long term support release, so it keeps receiving security fixes and hardware support without a subscription.</p>",
+			),
+			array(
+				'title'     => 'ClamAV Free Download',
+				'cat'       => 'antivirus',
+				'cover'     => 'security',
+				'platforms' => array( 'Windows', 'macOS', 'Linux' ),
+				'version'   => '1.4.3',
+				'size'      => '148 MB',
+				'setup'     => 'clamav-1.4.3.win.x64.msi',
+				'type'      => 'Offline installer / portable',
+				'compat'    => '32-bit (x86) and 64-bit (x64)',
+				'licence'   => 'Free and open source (GPLv2)',
+				'date'      => gmdate( 'Y-m-d', strtotime( '-6 days' ) ),
+				'dev'       => 'Cisco Talos',
+				'site'      => 'https://www.clamav.net/downloads',
+				'langs'     => 'English and 20+ more',
+				'req'       => array(
+					'os'   => 'Windows 10 or newer, macOS 12+, most Linux distributions',
+					'cpu'  => '1 GHz processor or faster',
+					'ram'  => '1 GB (2 GB recommended)',
+					'disk' => '500 MB of free space',
+					'gpu'  => 'Not required',
+				),
+				'features' => "Signature database refreshed several times a day\nOn demand scans of files, folders and removable drives\nScans run locally, so no file is uploaded anywhere\nCommand line scanner plus a graphical front end\nOptional mail gateway and file server components",
+				'steps'    => "Download the package for your operating system\nRun the installer and keep the suggested folders\nStart the update so the signature database is fetched\nPick the folders to examine and start the scan\nQuarantine or delete whatever the report lists",
+				'excerpt'  => 'A free open source virus scanner with a signature database refreshed several times a day and completely local scanning.',
+				'content'  => "<p>ClamAV is the scanner behind many mail servers and file gateways. The desktop build brings the same engine to a normal PC: signatures are downloaded, files are compared against them locally, and nothing is sent to a third party.</p>\n<p>It is a good second opinion tool beside the antivirus that ships with Windows or macOS, and it is the scanner used on Linux where commercial suites are rare.</p>",
+			),
+			array(
+				'title'     => 'TestDisk and PhotoRec Free Download',
+				'cat'       => 'data-recovery',
+				'cover'     => 'recovery',
+				'platforms' => array( 'Windows', 'macOS', 'Linux' ),
+				'version'   => '7.2',
+				'size'      => '42 MB',
+				'setup'     => 'testdisk-7.2.win.zip',
+				'type'      => 'Portable archive - no installation',
+				'compat'    => '32-bit (x86) and 64-bit (x64)',
+				'licence'   => 'Free and open source (GPLv2+)',
+				'date'      => gmdate( 'Y-m-d', strtotime( '-13 days' ) ),
+				'dev'       => 'CGSecurity',
+				'site'      => 'https://www.cgsecurity.org/',
+				'langs'     => 'English and 15+ more',
+				'req'       => array(
+					'os'   => 'Windows 7 or newer, macOS 10.9+, Linux',
+					'cpu'  => 'Any processor',
+					'ram'  => '256 MB',
+					'disk' => 'Free space on another drive for the recovered files',
+					'gpu'  => 'Not required',
+				),
+				'features' => "Recovers deleted files from memory cards, USB sticks and hard disks\nRebuilds lost partitions and repairs boot sectors\nPhotoRec matches file signatures, so it works without a file system\nOpens the disk read only: nothing is written to the drive being examined\nRuns from a bootable disk when the system no longer starts",
+				'steps'    => "Unpack the archive - the program does not need to be installed\nConnect the media to examine and start TestDisk\nChoose Create to write a log, then select the disk\nPick the partition table type and run the Analyse step\nCopy the files PhotoRec finds to a different drive",
+				'excerpt'  => 'Open source recovery tools that rebuild lost partitions and rescue deleted files from memory cards, USB sticks and hard disks.',
+				'content'  => "<p>TestDisk repairs partition tables and boot sectors; PhotoRec ignores the file system completely and rebuilds files by matching their signatures, which is what makes it work on cards that a camera or a phone has already declared empty.</p>\n<p>Both tools are portable and open the drive read only, so the original data is left untouched while the recovered copies are written to another disk.</p>",
+			),
+			array(
+				'title'     => 'uGet Download Manager Free Download',
+				'cat'       => 'download-managers',
+				'cover'     => 'download',
+				'platforms' => array( 'Windows', 'Linux' ),
+				'version'   => '2.2.3',
+				'size'      => '18 MB',
+				'setup'     => 'uget-2.2.3-win64.zip',
+				'type'      => 'Offline installer / portable archive',
+				'compat'    => '32-bit (x86) and 64-bit (x64)',
+				'licence'   => 'Free and open source (LGPLv3)',
+				'date'      => gmdate( 'Y-m-d', strtotime( '-17 days' ) ),
+				'dev'       => 'uGet project',
+				'site'      => 'https://ugetdm.com/',
+				'langs'     => 'English, Arabic, French, 30+ more',
+				'req'       => array(
+					'os'   => 'Windows 7 or newer, most Linux distributions',
+					'cpu'  => 'Any x86 processor',
+					'ram'  => '512 MB',
+					'disk' => '120 MB of free space',
+					'gpu'  => 'Not required',
+				),
+				'features' => "Resumes interrupted downloads and keeps the queue after a restart\nSegmented transfers with several connections per file\nTakes over links and media addresses from the browser\nScheduler, clipboard monitor and batch downloads\nOne profile shared between the Windows and Linux builds",
+				'steps'    => "Download the archive for your operating system\nUnpack it and start the program - no installation required\nAdd a download by pasting the address or dropping the link\nSet the number of connections and the target folder\nLet the queue run; paused transfers continue where they stopped",
+				'excerpt'  => 'A free download manager that resumes broken transfers, queues links and takes over downloads from your browser.',
+				'content'  => "<p>Large files rarely arrive in one piece: connections drop, mirrors slow down or the browser gives up at ninety percent. A download manager keeps the partial file, reconnects and continues from where it stopped.</p>\n<p>uGet is open source and portable, and the same profile can be used on Windows and Linux, so the queue survives a change of machine.</p>",
+			),
 		);
 
 		foreach ( $entries as $entry ) {
@@ -320,9 +428,9 @@ class ZSM_Demo_Content {
 			'operating-systems' => __( 'Operating Systems', 'zabisoft-software-manager' ),
 			'office-tools'      => __( 'Office Tools', 'zabisoft-software-manager' ),
 			'download-managers' => __( 'Download Managers', 'zabisoft-software-manager' ),
-			'video-editing'     => __( 'Multimedia & Video', 'zabisoft-software-manager' ),
+			'video-editing'     => __( 'Video Editing', 'zabisoft-software-manager' ),
 			'3d-designing'      => __( '3D & Graphic Design', 'zabisoft-software-manager' ),
-			'antivirus'         => __( 'Security & Antivirus', 'zabisoft-software-manager' ),
+			'antivirus'         => __( 'Antivirus', 'zabisoft-software-manager' ),
 			'data-recovery'     => __( 'Data Recovery', 'zabisoft-software-manager' ),
 			'disk-management'   => __( 'Utilities', 'zabisoft-software-manager' ),
 		);
@@ -337,6 +445,13 @@ class ZSM_Demo_Content {
 
 			if ( ! $term ) {
 				$term = wp_insert_term( $name, 'software_category', array( 'slug' => $slug ) );
+			} else {
+				$term_id   = (int) ( is_array( $term ) ? $term['term_id'] : $term );
+				$term_data = get_term( $term_id, 'software_category' );
+
+				if ( $term_data && ! is_wp_error( $term_data ) && $term_data->name !== $name ) {
+					wp_update_term( $term_id, 'software_category', array( 'name' => $name ) );
+				}
 			}
 
 			if ( ! is_wp_error( $term ) ) {
@@ -381,6 +496,10 @@ class ZSM_Demo_Content {
 			'cover-utility.jpg'  => 'covers',
 			'cover-3d.jpg'       => 'covers',
 			'cover-audio.jpg'    => 'covers',
+			'cover-os.jpg'       => 'covers',
+			'cover-security.jpg' => 'covers',
+			'cover-recovery.jpg' => 'covers',
+			'cover-download.jpg' => 'covers',
 			'shot-1.jpg'         => 'shots',
 			'shot-2.jpg'         => 'shots',
 			'shot-3.jpg'         => 'shots',
@@ -449,7 +568,7 @@ class ZSM_Demo_Content {
 				'post_excerpt' => $entry['excerpt'],
 				'post_content' => $entry['content'],
 				'post_author'  => $this->author_id(),
-				'post_date'    => gmdate( 'Y-m-d H:i:s', strtotime( '-' . wp_rand( 1, 40 ) . ' days' ) ),
+				'post_date'    => gmdate( 'Y-m-d H:i:s', strtotime( '-' . wp_rand( 1, 14 ) . ' days' ) ),
 			),
 			true
 		);
@@ -574,6 +693,26 @@ class ZSM_Demo_Content {
 			}
 		}
 
+		// WordPress ships a “Hello world!” post with every installation. Keep it,
+		// but move it behind the downloads instead of letting it lead the front
+		// page, and give it one of the demo categories.
+		$hello = get_page_by_path( 'hello-world', OBJECT, 'post' );
+
+		if ( $hello ) {
+			wp_update_post(
+				array(
+					'ID'        => $hello->ID,
+					'post_date' => gmdate( 'Y-m-d H:i:s', strtotime( '-34 days' ) ),
+				)
+			);
+
+			$tutorials = term_exists( 'tutorials', 'category' );
+
+			if ( $tutorials ) {
+				wp_set_post_terms( $hello->ID, array( (int) ( is_array( $tutorials ) ? $tutorials['term_id'] : $tutorials ) ), 'category' );
+			}
+		}
+
 		foreach ( $posts as $item ) {
 			$post_id = wp_insert_post(
 				array(
@@ -583,6 +722,9 @@ class ZSM_Demo_Content {
 					'post_excerpt' => $item['excerpt'],
 					'post_content' => $item['body'],
 					'post_author'  => $this->author_id(),
+					// Older than the software entries, so the front page opens with
+					// downloads and the guides sit behind the pagination.
+					'post_date'    => gmdate( 'Y-m-d H:i:s', strtotime( '-' . wp_rand( 18, 30 ) . ' days' ) ),
 				),
 				true
 			);
@@ -822,6 +964,12 @@ class ZSM_Demo_Content {
 			$this->remember( 'menus', $menu_id );
 		}
 
+		// Start from an empty menu: re-running the importer after a theme or
+		// plugin update must not leave stale items behind.
+		foreach ( (array) wp_get_nav_menu_items( $menu_id ) as $zs_stale ) {
+			wp_delete_post( $zs_stale->ID, true );
+		}
+
 		$order = 0;
 		$items = array(
 			array(
@@ -832,12 +980,22 @@ class ZSM_Demo_Content {
 			),
 		);
 
-		foreach ( $terms['categories'] as $slug => $term_id ) {
-			if ( $slug === 'disk-management' ) {
+		// The reference site lists its categories in this order.
+		$menu_slugs = array(
+			'operating-systems',
+			'download-managers',
+			'office-tools',
+			'video-editing',
+			'antivirus',
+			'data-recovery',
+		);
+
+		foreach ( $menu_slugs as $slug ) {
+			if ( empty( $terms['categories'][ $slug ] ) ) {
 				continue;
 			}
 
-			$items[] = array( 'term' => array( 'software_category', $term_id ) );
+			$items[] = array( 'term' => array( 'software_category', $terms['categories'][ $slug ] ) );
 		}
 
 		if ( $last_id ) {
@@ -926,28 +1084,37 @@ class ZSM_Demo_Content {
 
 			if ( ! is_wp_error( $footer_id ) ) {
 				$this->remember( 'menus', $footer_id );
+			}
+		}
 
-				$order = 0;
+		if ( $footer_id && ! is_wp_error( $footer_id ) ) {
+			// Built from scratch, like the main menu.
+			foreach ( (array) wp_get_nav_menu_items( $footer_id ) as $zs_stale ) {
+				wp_delete_post( $zs_stale->ID, true );
+			}
 
-				foreach ( array( 'about', 'contact-us', 'privacy-policy', 'dmca', 'disclaimer', 'sitemap' ) as $slug ) {
-					if ( empty( $pages[ $slug ] ) ) {
-						continue;
-					}
+			$order = 0;
 
-					$order++;
-
-					wp_update_nav_menu_item(
-						$footer_id,
-						0,
-						array(
-							'menu-item-type'      => 'post_type',
-							'menu-item-object'    => 'page',
-							'menu-item-object-id' => (int) $pages[ $slug ],
-							'menu-item-status'    => 'publish',
-							'menu-item-position'  => $order,
-						)
-					);
+			// Same links as the reference site's footer: About, Contact Us,
+			// Privacy Policy, DMCA, Disclaimer, Sitemap.
+			foreach ( array( 'about', 'contact-us', 'privacy-policy', 'dmca', 'disclaimer', 'sitemap' ) as $slug ) {
+				if ( empty( $pages[ $slug ] ) ) {
+					continue;
 				}
+
+				$order++;
+
+				wp_update_nav_menu_item(
+					$footer_id,
+					0,
+					array(
+						'menu-item-type'      => 'post_type',
+						'menu-item-object'    => 'page',
+						'menu-item-object-id' => (int) $pages[ $slug ],
+						'menu-item-status'    => 'publish',
+						'menu-item-position'  => $order,
+					)
+				);
 			}
 		}
 
@@ -962,8 +1129,10 @@ class ZSM_Demo_Content {
 			$assignments['footer'] = $footer_id;
 		}
 
-		if ( array_key_exists( 'topbar', (array) $locations ) ) {
-			$assignments['topbar'] = $menu_id;
+		if ( array_key_exists( 'topbar', (array) $locations ) && $footer_id && ! is_wp_error( $footer_id ) ) {
+			// The top bar shows the secondary links (About, Contact, …), never a
+			// second copy of the main menu.
+			$assignments['topbar'] = $footer_id;
 		}
 
 		if ( $assignments ) {

@@ -276,6 +276,32 @@ echo 'sidebar-1 widgets: ' . wp_json_encode( $sidebars['sidebar-1'] ?? array() )
 echo "ready\n";
 PHP
 
+cat > "$HARNESS/relink.php" <<'PHP'
+<?php
+/** Points the theme's menu locations at the menus that actually exist. */
+require_once '/wordpress/wp-load.php';
+
+$locations = array();
+
+foreach ( wp_get_nav_menus() as $menu ) {
+	$items = count( (array) wp_get_nav_menu_items( $menu->term_id ) );
+	echo "menu {$menu->name} id={$menu->term_id} items={$items}\n";
+
+	if ( 'Main menu' === $menu->name ) {
+		$locations['primary'] = (int) $menu->term_id;
+	}
+
+	if ( 'Footer menu' === $menu->name ) {
+		// The top bar carries the secondary links, never a copy of the main menu.
+		$locations['footer'] = (int) $menu->term_id;
+		$locations['topbar'] = (int) $menu->term_id;
+	}
+}
+
+set_theme_mod( 'nav_menu_locations', $locations );
+echo 'menu locations: ' . wp_json_encode( get_theme_mod( 'nav_menu_locations' ) ) . "\n";
+PHP
+
 # ---------------------------------------------------------------------------
 # 6. A PHP syntax linter (php-parser), so checked-in code can be verified
 # ---------------------------------------------------------------------------
@@ -341,6 +367,13 @@ run_php setup.php
 # classes are not registered yet, so the placement of the sidebar widgets is
 # retried once the theme is loaded for real.
 run_php setup.php
+
+# The demo importer assigns the menu locations while it builds the demo, but in
+# this harness the option write does not survive that request (Playground writes
+# back a snapshot of the options it read when the request started), which left
+# the menu bar empty. Pointing the locations at the menus in a request of their
+# own makes the assignment stick.
+run_php relink.php
 
 # ---------------------------------------------------------------------------
 # 8. The server script
